@@ -196,4 +196,12 @@ EXPECTED_HTML;
         $sameInstanceAgain = TestParsedown::instance('test late static binding');
         $this->assertSame($testParsedown, $sameInstanceAgain);
     }
+
+    /**
+     * @return Parsedown|TestParsedown
+     */
+    public function getParsedown()
+    {
+        return $this->Parsedown;
+    }
 }
