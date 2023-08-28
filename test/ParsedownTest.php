@@ -204,4 +204,12 @@ EXPECTED_HTML;
     {
         return $this->Parsedown;
     }
+
+    /**
+     * @return array
+     */
+    public function getDirs(): array
+    {
+        return $this->dirs;
+    }
 }
